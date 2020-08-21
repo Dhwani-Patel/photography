@@ -1,0 +1,210 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<style >
+		body{
+			margin:0;
+		}
+
+		.main-nav{
+			max-width: 100%;
+			background-color:black;
+			position: -webkit-sticky; /* Safari */
+ 			position: sticky;
+
+ 			
+		}
+		ul{
+			
+			margin-left:10%;
+			padding: 0;
+			margin-bottom: 0px;
+		}
+		
+		ul li a{
+			
+			text-decoration: none;
+			color: #f1f1f1;
+			
+		}
+
+
+		ul li
+		{
+			padding: 20px;
+			width: 20%;
+			text-align: center;
+			list-style-type: none;
+			display: inline-block;
+		
+
+			
+		}
+	
+		ul li:hover{
+			
+			background-color:#A9A9A9;
+			
+			}
+
+		@media screen and (max-width: 957px)
+		{
+			ul{
+				margin: 0px;
+			}
+			ul li{
+
+				width: 100%;
+				text-align: center;
+				display: block;
+
+			}
+
+
+		}
+		.mainpage_img1{ 
+			height:auto;
+			max-width: 100%;
+
+
+		}
+				
+		.photography{
+			max-width: 100%;
+			height: auto;
+			display: flex;
+			background-color: #f1f1f1;
+			
+		}
+
+		.photography-content{
+			flex-basis: 25%;
+			padding: 20px;
+			
+
+		}
+		.photography-content img{
+			width: 100%;
+			margin-top: 15px;
+
+		}
+
+
+		@media screen and (max-width: 720px){
+			.photography{
+				flex-direction: column;
+
+			}
+			
+		}
+
+
+
+		@media screen and (max-width: 600px){
+			.main-nav > ul{
+				grid-template-rows: 1fr 1fr 1fr 1fr;
+			}
+		}
+
+
+		.contact-us{
+			max-width: 100%;
+			display: flex;
+			justify-content: center;
+			padding: 20px;
+			}
+
+		.contact-form input{
+			width: 100%;
+			padding: 10px;
+			margin-top:10px;
+
+		}
+		.contact-form button{
+			width: 50%;
+			padding: 10px;
+			margin-top: 5px;
+			margin-left: 25%;
+			background-color: black;
+			color: white;
+			border-radius: 1em;
+
+		}
+		.contact-form button:hover{
+			background-color: #A9A9A9;
+			color: black;
+
+		}
+		
+		.footer{
+			max-width: 100%;
+			background-color:black;
+			color: #f1f1f1;
+			padding: 50px;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="grid-container">
+		<nav class="main-nav">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Photography</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</nav>
+		<article class="main_content">
+			<img src="./images/home_img1.jpg" class="mainpage_img1">
+
+		</article>
+		<div class="photography">
+
+			<div class="photography-content">
+				<img src="./images/marriage.jpg"/>
+				<h2><center>Marriage Photography</center></h2>
+				<p></p>
+			</div>
+
+			<div class="photography-content">
+				<img src="./images/prewedding.jpg"/>
+				<h2><center>Prewedding Photography</center></h2>
+				<p></p>
+			</div>
+
+			<div class="photography-content">
+				<img src="./images/babyShower2.jpg"/>
+				<h2><center>BabyShower Photography</center></h2>
+				<p></p>
+			</div>
+			<div class="photography-content">
+				<img src="./images/birthday.jpg"/>
+				<h2><center>Birthday Photography</center></h2>
+				<p></p>
+			</div>
+
+		</div>
+
+		<div class="contact-us">
+			<div class="contact-form">
+				<h2><center>Contact Us</center></h2>
+				<form>
+					<input type="text" name="name" placeholder="Name"/>
+					<input type="email" name="email" placeholder="Email"/>
+					<input type="text" name="subject" placeholder="Subject"/>
+					<input type="text" name="comment" placeholder="Comment"/>
+					<button type="submit">Submit</button>
+				</form>
+
+			</div>
+		</div> 
+		<footer  class="footer">
+			Developed By Dhwani Patel
+		</footer>
+		
+	</div>
+	
+</body>
+</html>
